@@ -4,6 +4,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+button:hover, a:hover{
+    cursor:pointer;
+}
+
 .button{
     background: white;
     font-family: 'TT Lakes', serif;
@@ -35,10 +40,11 @@ html{
     font-family: 'TT Lakes', serif;
     height: 100%;
     justify-content: flex-start;
-    align-content: flex-start;
-    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    /*align-content: flex-start;*/
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
     flex-direction: column;
-    min-height: 770px;
+    /*min-height: 770px;*/
+
 }
 .header{
     align-self: flex-start;
@@ -76,9 +82,11 @@ html{
     width: inherit;
     flex-wrap: wrap;
     align-items: flex-start;
+
 }
 .main__ul li{
     width: 320px;
+
 }
 .main__ul li button{
     padding-left: 20px;
@@ -103,30 +111,6 @@ html{
 .button__repair--state--active{
     color: #7E7E82;
     border-left: 4px solid #41F6D7;
-}
-.main__repair{
-
-}
-.main__services{
-
-}
-.main__corporate{
-
-}
-.main__sellers{
-
-}
-.main__partners{
-
-}
-.main__producers{
-
-}
-.main__centers{
-
-}
-.main__contacts{
-
 }
 
 .footer{
@@ -171,4 +155,48 @@ html{
 .footer__ru--state--active{
     color: #7E7E82;
     margin-left: 20px;
+}
+
+@media (max-height: 770px) {
+    /*.header{*/
+    /*    max-height: 20%;*/
+    /*}*/
+    /*.main {*/
+    /*    max-height: 40%;*/
+    /*}*/
+    .main__ul li button{
+        padding: 1.5vh 20px;
+        /*margin: 1vh 0;*/
+        margin: 0;
+    }
+    .search, .logo, .cancel{
+        padding-bottom: 1vh;
+    }
+    img:not(.logo__image) {
+        max-height: 5vh;
+    }
+    .logo__image{
+        max-height: 6vh;
+    }
+    .main{
+        flex-grow: 1;
+    }
+    .footer{
+
+    }
+    .footer__languages .button{
+
+    }
+    .footer__languages{
+        margin: 0;
+        padding: 0 4px;
+    }
+    .footer__number{
+        padding: 0 24px;
+        margin: 0;
+    }
+    .footer__email{
+        padding: 0 24px;
+        margin: 0;
+    }
 }
