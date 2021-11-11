@@ -158,16 +158,11 @@ html{
 }
 
 @media (max-height: 770px) {
-    /*.header{*/
-    /*    max-height: 20%;*/
-    /*}*/
-    /*.main {*/
-    /*    max-height: 40%;*/
-    /*}*/
     .main__ul li button{
         padding: 1.5vh 20px;
-        /*margin: 1vh 0;*/
         margin: 0;
+        width: 320px;
+        text-align: left;
     }
     .search, .logo, .cancel{
         padding-bottom: 1vh;
@@ -180,12 +175,6 @@ html{
     }
     .main{
         flex-grow: 1;
-    }
-    .footer{
-
-    }
-    .footer__languages .button{
-
     }
     .footer__languages{
         margin: 0;
